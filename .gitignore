@@ -1,0 +1,36 @@
+# --- Environnements virtuels ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# --- Données personnelles (ne jamais versionner) ---
+data/data.json
+data/*.bak
+data/*.tmp
+
+# --- PDF de test personnels et documents générés ---
+*.pdf
+!tests/fixtures/*.pdf
+output/
+
+# --- Éditeurs / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Build mobile (Kivy/Buildozer, BeeWare/Briefcase) ---
+.buildozer/
+bin/

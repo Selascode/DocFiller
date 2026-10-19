@@ -1,0 +1,2 @@
+# Étape 1 : aucune dépendance externe (bibliothèque standard uniquement).
+# Les dépendances PDF / GUI seront ajoutées aux étapes 2 et 4.
