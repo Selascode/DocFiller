@@ -48,5 +48,3 @@ Procédons étape par étape. Ne génère pas tout le code d'un coup, mais atten
 - Création d'un fichier `.gitignore` dès le départ (pour exclure les environnements virtuels ou les PDF de test personnels).
 - Gère les exceptions (fichier JSON manquant, PDF corrompu, PDF sans formulaire interactif).
 - Utilise le typage statique (`TypeHints`) pour clarifier les structures de données.
-
-Commençons par l'Étape 1. Fournis-moi le code pour la gestion du fichier JSON et les premières instructions Git.

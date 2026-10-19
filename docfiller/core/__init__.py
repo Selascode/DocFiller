@@ -6,7 +6,17 @@ from docfiller.core.exceptions import (
     DataStoreError,
     DocFillerError,
     InvalidKeyError,
+    NoFormFieldsError,
+    PdfCorruptedError,
+    PdfEncryptedError,
+    PdfError,
+    PdfNotFoundError,
+    PdfWriteError,
+    ProcessingCancelled,
 )
+from docfiller.core.matcher import FieldMatcher, Match, MatchMethod
+from docfiller.core.pdf_engine import FieldType, FillResult, FormField, PdfEngine
+from docfiller.core.processor import Analysis, DocumentProcessor, MissingFieldResolver, Resolution
 
 __all__ = [
     "DataStore",
@@ -15,4 +25,22 @@ __all__ = [
     "DataStoreError",
     "DataCorruptedError",
     "InvalidKeyError",
+    "PdfError",
+    "PdfNotFoundError",
+    "PdfCorruptedError",
+    "PdfEncryptedError",
+    "PdfWriteError",
+    "NoFormFieldsError",
+    "ProcessingCancelled",
+    "FieldType",
+    "FormField",
+    "FillResult",
+    "PdfEngine",
+    "FieldMatcher",
+    "Match",
+    "MatchMethod",
+    "Analysis",
+    "DocumentProcessor",
+    "MissingFieldResolver",
+    "Resolution",
 ]

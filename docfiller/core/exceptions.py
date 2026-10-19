@@ -10,6 +10,9 @@ class DocFillerError(Exception):
     """Classe de base de toutes les erreurs DocFiller."""
 
 
+# --------------------------------------------------------------------------- #
+# Base de données JSON
+# --------------------------------------------------------------------------- #
 class DataStoreError(DocFillerError):
     """Erreur générique liée à la base de données JSON."""
 
@@ -20,3 +23,37 @@ class DataCorruptedError(DataStoreError):
 
 class InvalidKeyError(DataStoreError):
     """La clé fournie est vide ou invalide après normalisation."""
+
+
+# --------------------------------------------------------------------------- #
+# Moteur PDF
+# --------------------------------------------------------------------------- #
+class PdfError(DocFillerError):
+    """Erreur générique liée à un fichier PDF."""
+
+
+class PdfNotFoundError(PdfError):
+    """Le fichier PDF source n'existe pas."""
+
+
+class PdfCorruptedError(PdfError):
+    """Le fichier n'est pas un PDF valide (corrompu ou mauvais format)."""
+
+
+class PdfEncryptedError(PdfError):
+    """Le PDF est protégé par un mot de passe."""
+
+
+class NoFormFieldsError(PdfError):
+    """Le PDF ne contient aucun champ de formulaire interactif (AcroForm)."""
+
+
+class PdfWriteError(PdfError):
+    """Impossible d'écrire le PDF généré."""
+
+
+# --------------------------------------------------------------------------- #
+# Traitement
+# --------------------------------------------------------------------------- #
+class ProcessingCancelled(DocFillerError):
+    """L'utilisateur a annulé le traitement en cours."""

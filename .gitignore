@@ -16,9 +16,9 @@ build/
 dist/
 
 # --- Données personnelles (ne jamais versionner) ---
-data/data.json
-data/*.bak
-data/*.tmp
+# data.json, aliases.json (correspondances apprises), settings.json, sauvegardes...
+data/*
+!data/data.example.json
 
 # --- PDF de test personnels et documents générés ---
 *.pdf

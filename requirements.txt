@@ -1,2 +1,4 @@
-# Étape 1 : aucune dépendance externe (bibliothèque standard uniquement).
-# Les dépendances PDF / GUI seront ajoutées aux étapes 2 et 4.
+# Versions testées (Python 3.12). Sous Linux, Tkinter nécessite aussi le paquet système python3-tk.
+pymupdf>=1.28.2        # Lecture / écriture des formulaires PDF (AcroForm)
+customtkinter>=6.0.0   # Interface graphique desktop
+tkinterdnd2>=0.6.4     # Glisser-déposer (optionnel : l'app fonctionne sans)
